@@ -89,6 +89,17 @@
 		    50% { opacity:0; }
 		    100% { opacity:1; }
 		}
+		.thumbnail{
+			width: 85%;
+		}
+		.card{
+			margin: 10%;
+			border-radius: 15px 15px 15px 15px;
+        	box-shadow: -3px 9px 23px -5px rgba(0,0,0,0.5);
+		}
+		.card-img {
+			height: 100%;
+		}
 
 	</style>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
@@ -96,7 +107,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	 <!-- <script src="typed.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
 	 
 </head>
 <body>
@@ -147,6 +158,65 @@
 		</div>
 
 
+	<!--parallex content-->
+	<!--<div class="container">
+		<img class="thumbnail" src="2.jpg" alt="image">
+	</div> -->
+
+	<!--game content-->
+	<div class="container">
+		<!--1st game-->
+		<center>
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row no-gutters">
+		    <div class="col-md-4">
+		      <img src="1.2.png" class="card-img" alt="...">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h1 class="card-title">Tennies Game</h1>
+		        <button type="button" class="btn btn-primary btn-lg">Open</button>
+		        <p class="card-text"><small class="text-muted">Click Open to play</small></p>
+		      </div>
+		    </div>
+		  </div>
+		  </center>
+		</div>
+		<!--2nd game-->
+		<center>
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row no-gutters">
+		    <div class="col-md-4">
+		      <img src="1.2.png" class="card-img" alt="...">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h1 class="card-title">Tennies Game</h1>
+		        <button type="button" class="btn btn-primary btn-lg">Open</button>
+		        <p class="card-text"><small class="text-muted">Click Open to play</small></p>
+		      </div>
+		    </div>
+		  </div>
+		  </center>
+		</div>
+		<!--3rd game-->
+		<center>
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row no-gutters">
+		    <div class="col-md-4">
+		      <img src="1.2.png" class="card-img" alt="...">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h1 class="card-title">Card title</h1>
+		        <button type="button" class="btn btn-primary btn-lg">Open</button>
+		        <p class="card-text"><small class="text-muted">Click Open to play</small></p>
+		      </div>
+		    </div>
+		  </div>
+		  </center>
+		</div>
+	</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -172,6 +242,10 @@
 		});
     </script>
 
+    <script type="text/javascript">
+    	var image = document.getElementsByClassName('thumbnail');
+		new simpleParallax(image);
+    </script>
 
 
 </body>
